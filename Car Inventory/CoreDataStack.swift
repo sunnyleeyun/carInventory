@@ -9,8 +9,11 @@
 import Foundation
 import CoreData
 
-class CoreDataStack {
-    lazy var persistentContainer: NSPersistentContainer = {
+public class CoreDataStack {
+    
+    public init(){}
+    
+    public lazy var persistentContainer: NSPersistentContainer = {
         /*
          The persistent container for the application. This implementation
          creates and returns a container, having loaded the store for the

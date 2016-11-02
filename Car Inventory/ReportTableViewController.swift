@@ -37,8 +37,8 @@ class ReportTableViewController: UITableViewController, UIPickerViewDataSource, 
         self.pickerView.delegate = self
         
         carService = CarService(managedObjectContext: managedObjectContext)
-        let totalCar = carService.getTotalCarInInventorySlow()
-        let totalSuvUnder30K = carService.getTotalSUVbyPriceSlow()
+        let totalCar = carService.getTotalCarInInventory()
+        let totalSuvUnder30K = carService.getTotalSUVbyPrice()
         
         pickerDatasource = carService.getCarTypes()
         

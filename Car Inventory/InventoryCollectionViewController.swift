@@ -12,7 +12,7 @@ import CoreData
 private let reuseIdentifier = "Cell"
 
 class InventoryCollectionViewController: UICollectionViewController, ReportTableViewControllerDelegate, UICollectionViewDelegateFlowLayout {
-//
+
     var managedObjectContext: NSManagedObjectContext!
     var request: NSFetchRequest<Car>!
     var cars: [Car] = []

@@ -103,16 +103,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 
                 let imageName = String(car.year) + car.make! + car.model! + ".jpg"
                 let image = resizeImage(image: UIImage(named: imageName)!, newWidth: 200)
-                let carData = UIImageJPEGRepresentation(image, 1.0)
+                let carData = UIImageJPEGRepresentation(image, 1)
                 car.thumbnail = NSData.init(data: carData!)
                 
                 let carImage = CarImage(context: managedObjectContext)
                 let originalImage = UIImage(named: imageName)
-                let originalImageData = UIImageJPEGRepresentation(originalImage!, 1.0)
+                let originalImageData = UIImageJPEGRepresentation(originalImage!, 1)
                 carImage.image = NSData.init(data: originalImageData!)
                 
-                car.carimage = carImage
-                
+                car.carImage = carImage
                 
                 let specs = Specification(context: managedObjectContext)
                 specs.conditionRating = ((json["values"] as! [String: AnyObject])["condition"]?.int16Value)!

@@ -28,7 +28,7 @@ class CarDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let carImage = car.carimage!
+        let carImage = car.carImage!
         carImageView.image = UIImage(data: carImage.image! as Data)
         carNameLabel.text = "\(car.year) \(car.make!) \(car.model!)"
         carPriceLabel.text = car.price.currencyFormatter

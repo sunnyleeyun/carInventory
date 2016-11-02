@@ -108,7 +108,18 @@
 		7BF06C701D7AB023002040E8 /* 2015HyundaiVeloster.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7BF06C171D7AB023002040E8 /* 2015HyundaiVeloster.jpg */; };
 		7BF06C731D7B3895002040E8 /* Double+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BF06C721D7B3895002040E8 /* Double+extension.swift */; };
 		7BF06C751D7B8BEE002040E8 /* cars.json in Resources */ = {isa = PBXBuildFile; fileRef = 7BF06C741D7B8BEE002040E8 /* cars.json */; };
+		9B152C3C1DCA1E93001220F7 /* Car_InventoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B152C3B1DCA1E93001220F7 /* Car_InventoryTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9B152C3E1DCA1E93001220F7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7BF06AE01D7AAAD9002040E8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7BF06AE71D7AAAD9002040E8;
+			remoteInfo = "Car Inventory";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		7BF06AE81D7AAAD9002040E8 /* Car Inventory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Car Inventory.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -214,10 +225,20 @@
 		7BF06C171D7AB023002040E8 /* 2015HyundaiVeloster.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2015HyundaiVeloster.jpg; sourceTree = "<group>"; };
 		7BF06C721D7B3895002040E8 /* Double+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Double+extension.swift"; sourceTree = "<group>"; };
 		7BF06C741D7B8BEE002040E8 /* cars.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cars.json; sourceTree = "<group>"; };
+		9B152C391DCA1E93001220F7 /* Car InventoryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Car InventoryTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B152C3B1DCA1E93001220F7 /* Car_InventoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car_InventoryTests.swift; sourceTree = "<group>"; };
+		9B152C3D1DCA1E93001220F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		7BF06AE51D7AAAD9002040E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B152C361DCA1E93001220F7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -231,6 +252,7 @@
 			isa = PBXGroup;
 			children = (
 				7BF06AEA1D7AAAD9002040E8 /* Car Inventory */,
+				9B152C3A1DCA1E93001220F7 /* Car InventoryTests */,
 				7BF06AE91D7AAAD9002040E8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -239,6 +261,7 @@
 			isa = PBXGroup;
 			children = (
 				7BF06AE81D7AAAD9002040E8 /* Car Inventory.app */,
+				9B152C391DCA1E93001220F7 /* Car InventoryTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -384,6 +407,15 @@
 			name = utility;
 			sourceTree = "<group>";
 		};
+		9B152C3A1DCA1E93001220F7 /* Car InventoryTests */ = {
+			isa = PBXGroup;
+			children = (
+				9B152C3B1DCA1E93001220F7 /* Car_InventoryTests.swift */,
+				9B152C3D1DCA1E93001220F7 /* Info.plist */,
+			);
+			path = "Car InventoryTests";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -404,6 +436,24 @@
 			productReference = 7BF06AE81D7AAAD9002040E8 /* Car Inventory.app */;
 			productType = "com.apple.product-type.application";
 		};
+		9B152C381DCA1E93001220F7 /* Car InventoryTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9B152C401DCA1E93001220F7 /* Build configuration list for PBXNativeTarget "Car InventoryTests" */;
+			buildPhases = (
+				9B152C351DCA1E93001220F7 /* Sources */,
+				9B152C361DCA1E93001220F7 /* Frameworks */,
+				9B152C371DCA1E93001220F7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9B152C3F1DCA1E93001220F7 /* PBXTargetDependency */,
+			);
+			name = "Car InventoryTests";
+			productName = "Car InventoryTests";
+			productReference = 9B152C391DCA1E93001220F7 /* Car InventoryTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -418,6 +468,12 @@
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = VJGEDW5SA9;
 						ProvisioningStyle = Automatic;
+					};
+					9B152C381DCA1E93001220F7 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = VJGEDW5SA9;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 7BF06AE71D7AAAD9002040E8;
 					};
 				};
 			};
@@ -435,6 +491,7 @@
 			projectRoot = "";
 			targets = (
 				7BF06AE71D7AAAD9002040E8 /* Car Inventory */,
+				9B152C381DCA1E93001220F7 /* Car InventoryTests */,
 			);
 		};
 /* End PBXProject section */
@@ -539,6 +596,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9B152C371DCA1E93001220F7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -558,7 +622,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9B152C351DCA1E93001220F7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B152C3C1DCA1E93001220F7 /* Car_InventoryTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9B152C3F1DCA1E93001220F7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7BF06AE71D7AAAD9002040E8 /* Car Inventory */;
+			targetProxy = 9B152C3E1DCA1E93001220F7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		7BF06AEF1D7AAAD9002040E8 /* Main.storyboard */ = {
@@ -697,6 +777,34 @@
 			};
 			name = Release;
 		};
+		9B152C411DCA1E93001220F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = VJGEDW5SA9;
+				INFOPLIST_FILE = "Car InventoryTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sunnyleeyun.Car-InventoryTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Car Inventory.app/Car Inventory";
+			};
+			name = Debug;
+		};
+		9B152C421DCA1E93001220F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = VJGEDW5SA9;
+				INFOPLIST_FILE = "Car InventoryTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sunnyleeyun.Car-InventoryTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Car Inventory.app/Car Inventory";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -717,6 +825,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		9B152C401DCA1E93001220F7 /* Build configuration list for PBXNativeTarget "Car InventoryTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9B152C411DCA1E93001220F7 /* Debug */,
+				9B152C421DCA1E93001220F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 
